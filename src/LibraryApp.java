@@ -67,7 +67,6 @@ public class LibraryApp {
         System.out.println("5. Return a book");
         System.out.println("6. Delete a book by id");
         System.out.println("7. Quit");
-        System.out.println("========================================");
         System.out.print("Enter your choice: ");
     }
 

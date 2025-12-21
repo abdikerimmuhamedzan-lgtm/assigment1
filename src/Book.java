@@ -1,7 +1,6 @@
 import java.time.Year;
 
 public class Book {
-    // Fields (private)
     private int id;
     private static int idGen = 1;
     private String title;
@@ -9,13 +8,11 @@ public class Book {
     private int year;
     private boolean available;
 
-    // Default constructor
     public Book() {
         this.id = idGen++;
         this.available = true;
     }
 
-    // Constructor with parameters
     public Book(String title, String author, int year) {
         this(); // calls default constructor
         setTitle(title);
@@ -23,7 +20,6 @@ public class Book {
         setYear(year);
     }
 
-    // Getters
     public int getId() {
         return id;
     }
@@ -71,17 +67,14 @@ public class Book {
         this.available = available;
     }
 
-    // Method to mark book as borrowed
     public void markAsBorrowed() {
         this.available = false;
     }
 
-    // Method to mark book as returned
     public void markAsReturned() {
         this.available = true;
     }
 
-    // Override toString()
     @Override
     public String toString() {
         String status = available ? "Available" : "Borrowed";
