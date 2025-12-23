@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== Task 1: Rectangle ===");
+        System.out.println("Task 1: Rectangle ");
         Rectangle rect1 = new Rectangle();
         Rectangle rect2 = new Rectangle(5.5, 3.2);
 
@@ -15,7 +15,7 @@ public class Main {
             System.out.println("Validation works: " + e.getMessage());
         }
 
-        System.out.println("\n=== Task 2: Book ===");
+        System.out.println("\n Task 2: Book ");
         Book book1 = new Book("1984", "George Orwell", 1949);
         Book book2 = new Book("Harry Potter", "J.K. Rowling", 1997);
 
